@@ -632,5 +632,4 @@ get_header('below-slider');
 			</div>
 
 <?php
-get_sidebar();
 get_footer();

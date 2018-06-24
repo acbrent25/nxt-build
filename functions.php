@@ -48,13 +48,6 @@ if ( ! function_exists( 'champagne_setup' ) ) :
 		) );
 		
 		
-		
-		// register the main-nav
-		function register_my_menu() {
-		  register_nav_menu('mainnav',__( 'mainnav' ));
-		}
-		add_action( 'init', 'register_my_menu' );
-		
 		// let's add "*active*" as a class to the li
 		
 		add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
@@ -217,7 +210,7 @@ function champagne_scripts() {
 	
 	// Current Page Vendor and Views -->
 	wp_enqueue_script( 'champagne-tools', get_template_directory_uri() . '/vendor/rs-plugin/js/jquery.themepunch.tools.min.js', array(), false, true );
-	wp_enqueue_script( 'champagne-revolution', get_template_directory_uri() . 'vendor/rs-plugin/js/jquery.themepunch.revolution.min.js', array(), false, true );
+	wp_enqueue_script( 'champagne-revolution', get_template_directory_uri() . '/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js', array(), false, true );
 	
 	// Theme Custom -->
 	wp_enqueue_script( 'champagne-custom', get_template_directory_uri() . '/js/custom.js', array(), false, true );

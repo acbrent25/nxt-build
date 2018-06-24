@@ -11,9 +11,9 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div><!-- #main -->
 
-	<footer id="footer" class="bg-light-5 mt-0">
+			<footer id="footer" class="bg-light-5 mt-0">
 				<div class="container">
 					<div class="row text-center">
 						<div class="col">
@@ -109,7 +109,7 @@
 								<p class="mb-0">Copyrights © 2018 All Rights Reserved by Okler</p>
 							</div>
 							<div class="col-12 col-lg-2 text-center order-1 order-lg-2">
-								<a href="index.html"><img src="img/logo-small.png" width="78" height="70" alt="EZY Theme" class="img-fluid" /></a>
+								<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/nxt-usa_logo.jpg" width="78" height="70" alt="EZY Theme" class="img-fluid" /></a>
 							</div>	
 							<div class="col-12 col-lg-4 text-center text-lg-left order-2 order-lg-3 mb-2 mb-lg-0">	
 								<a href="#" class="link-underline-dark mr-3">Privacy Policy</a>
@@ -119,6 +119,8 @@
 					</div>
 				</div>
 			</footer>
+
+		
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

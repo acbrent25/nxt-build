@@ -74,25 +74,9 @@
 								<div class="header-nav">
 									<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
 										<nav class="collapse">
-											
-											
-											<?php
-											wp_nav_menu( array(
-												'theme_location' 	=> 'mainnav',
-												'menu_id'        	=> 'primary-menu',
-												'menu_class'		=> 'nav flex-column flex-lg-row',
-												'menu_id'			=> 'mainNav',
-												'items_wrap'      => '<ul class="dropdown %2$s">%3$s</ul>',
-												'depth'				=> 0
-											) );
-											?>
-											
-											
-											
-<!--
 											<ul class="nav flex-column flex-lg-row" id="mainNav">
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="index.html">
+													<a class="dropdown-item dropdown-toggle" href="<?php echo get_home_url(); ?>">
 														Home
 													</a>
 												</li>
@@ -138,13 +122,12 @@
 													</a>
 												</li>
 											</ul>
--->
 										</nav>
 									</div>
 									<div class="header-button d-none d-sm-flex ml-3">
-										<a href="https://themeforest.net/item/ezy-responsive-multipurpose-html5-template/21814871" class="btn btn-outline btn-rounded btn-primary btn-4 btn-icon-effect-1" target="_blank">
+										<a href="#" class="btn btn-outline btn-rounded btn-primary btn-4 btn-icon-effect-1" target="_blank">
 											<span class="wrap">
-												<span>BUY EZY</span>
+												<span>Contact Us</span>
 												<i class="fas fa-shopping-cart"></i>
 											</span>
 										</a>
@@ -167,4 +150,4 @@
 				</div>
 			</header>
 
-	<div id="content" class="site-content">
+		<div role="main" class="main">
